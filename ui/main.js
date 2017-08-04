@@ -1,4 +1,4 @@
 console.log('Loaded!');
 
-var element = doc.getElementById('maincontent');
+var element = document.getElementById('maincontent');
 element.innerHTML = "New para";
