@@ -24,8 +24,7 @@ var button = document.getElementById('counter');
     
 };*/
 
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
+
 var submit = document.getElementById('submit_btn');
 
 submit.onclick = function() {
@@ -47,6 +46,9 @@ submit.onclick = function() {
             }
         }
     }
+    
+    var nameInput = document.getElementById('name');
+    var name = nameInput.value;
     
     // Make the request
     request.open('GET','http://vijay14887.imad.hasura-app.io/submit-name?name=' + name ,true);
