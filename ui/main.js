@@ -44,6 +44,8 @@ submit.onclick = function() {
             for (var i =0; i <names.length; i++){
             list += '<li>' + names[i] + '</li>';
             }
+            var ul = document.getElementById('namelist');
+             ul.innerHTML = list;
         }
     }
     
@@ -56,8 +58,7 @@ submit.onclick = function() {
     // Capture the name list and render it as a list
   
     }
-    var ul = document.getElementById('namelist');
-    ul.innerHTML = list;
+    
 };
 /* console.log('Loaded!');
 
