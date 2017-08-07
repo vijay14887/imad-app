@@ -24,7 +24,7 @@ var button = document.getElementById('counter');
     
 };*/
 
-
+var list = '';
 var submit = document.getElementById('submit_btn');
 
 submit.onclick = function() {
@@ -40,7 +40,7 @@ submit.onclick = function() {
            // var names = ['name1','name2','name3','name4'];
             var names = request.responseText;
             names = JSON.parse(names);
-            var list = '';
+            
             for (var i =0; i <names.length; i++){
             list += '<li>' + names[i] + '</li>';
             }
