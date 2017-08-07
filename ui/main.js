@@ -49,6 +49,8 @@ submit.onclick = function() {
         }
     }
     
+    };
+    
     var nameInput = document.getElementById('name');
     var name = nameInput.value;
     
@@ -56,8 +58,7 @@ submit.onclick = function() {
     request.open('GET','http://vijay14887.imad.hasura-app.io/submit-name?name=' + name ,true);
     request.send(null);
     // Capture the name list and render it as a list
-  
-    }
+ 
     
 };
 /* console.log('Loaded!');
