@@ -3,6 +3,7 @@
 var submit = document.getElementById('submit_btn');
 
 submit.onclick = function() {
+    alert("function started");
     // Make a request to the server and send the name
       // Create a request object
     var request = new XMLHttpRequest();
